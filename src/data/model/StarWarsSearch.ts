@@ -1,6 +1,6 @@
 export type SearchResult = {
-    characters: Character[],
-    hasMorePage: boolean,
+    characters: Character[];
+    hasMorePage: boolean;
 }
 
 export type Character = {

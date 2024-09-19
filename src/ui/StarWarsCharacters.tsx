@@ -58,7 +58,6 @@ const StarWarsCharactersScreen = () => {
                     keyExtractor={(item) => item.name}
                     renderItem={renderItem}
                     ListEmptyComponent={query ? <EmptyItem /> : null}
-                    contentContainerStyle={styles.contentContainer}
                     onEndReachedThreshold={0.2}
                     onEndReached={() => {
                         if (hasMorePage && !loadingMore) {
@@ -78,9 +77,6 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#000',
         paddingTop: 30,
-    },
-    contentContainer: {
-        //paddingBottom: 20,
     },
     card: {
         flex: 1,
