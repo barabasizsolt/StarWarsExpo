@@ -16,8 +16,14 @@ export const useStarWarsCharacters = (query: string) => {
                 setLoading(true);
             }
             const results = await getStarWarsCharacters(query, page);
-            setCharacters((prev) => isLoadMore ? [...prev, ...sortCharacters(results.characters)] : sortCharacters(results.characters));
-            setHasMorePage(results.hasMorePage);
+            if (results && results.characters) {
+                setCharacters((prev) =>
+                    isLoadMore ? [...prev, ...sortCharacters(results.characters)] : sortCharacters(results.characters)
+                );
+                setHasMorePage(results.hasMorePage);
+            } else {
+                setHasMorePage(false);
+            }
         } catch (error: any) {
             setHasMorePage(false);
         } finally {
