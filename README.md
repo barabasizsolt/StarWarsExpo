@@ -75,3 +75,7 @@ npm run android
 - **React Native & TypeScript**: Framework for building mobile apps using React with TypeScript.
 - **Expo**: A framework and platform for universal React applications.
 - **SWAPI**: The Star Wars API used to fetch character data.
+
+## Screenshot
+
+<img src="./assets/preview.png" alt="App Screenshot" style="width:300px;"/>
