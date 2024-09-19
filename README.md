@@ -68,9 +68,10 @@ npm run android
 
 - **src/data/**: Constains Data fetching logic + API respose models.
 - **src/ui/**: Contains the main screens of the app + custom hook for the screen.
+- **App.tsx**: Apps' entry point.
 
 ## Dependencies
 
-- **React Native**: Framework for building mobile apps using React.
+- **React Native & TypeScript**: Framework for building mobile apps using React with TypeScript.
 - **Expo**: A framework and platform for universal React applications.
 - **SWAPI**: The Star Wars API used to fetch character data.
