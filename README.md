@@ -64,6 +64,15 @@ npm run ios
 npm run android
 ```
 
+### Step 6: Testing
+
+Test are under __tests__/StarWarsCharacters-test.tsx:
+
+- **Run the test**: 
+```bash
+npm run test
+```
+
 ## Project Structure
 
 - **src/data/**: Constains Data fetching logic + API respose models.
@@ -75,6 +84,7 @@ npm run android
 - **React Native & TypeScript**: Framework for building mobile apps using React with TypeScript.
 - **Expo**: A framework and platform for universal React applications.
 - **SWAPI**: The Star Wars API used to fetch character data.
+- **Jest**: Test library.
 
 ## Screenshot
 
